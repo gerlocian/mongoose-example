@@ -1,4 +1,4 @@
 node_modules
 .gitignore
 Dockerfile
-docker-compose.yaml.bak
+docker-compose.yaml
