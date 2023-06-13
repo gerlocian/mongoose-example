@@ -1,0 +1,15 @@
+version: "3.1"
+
+services:
+  node:
+    build:
+      context: ./
+      target: buildimage
+    working_dir: /app
+    command: bash -c "npm install && npm start"
+    ports:
+      - '3000:3000'
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
