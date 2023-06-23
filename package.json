@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "lint": "echo \"ERROR: no lint specified\"",
-    "start": "node ./src/server.js",
+    "start": "nodemon ./src/server.js",
     "test": "echo \"Error: no test specified\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "mongoose": "^7.2.3",
+    "nodemon": "^2.0.22",
     "rxjs": "^7.8.1",
     "urlpattern-polyfill": "^7.0.0"
   }

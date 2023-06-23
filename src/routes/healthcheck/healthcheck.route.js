@@ -1,15 +1,12 @@
-const { BaseRoute } = require('../base.route');
+const { createRoute } = require('../createRoute');
 
-class HealthCheckRoute extends BaseRoute {
-    constructor() {
-        super('GET', '/check');
-    }
-
-    handle(req, res) {
+module.exports.HealthCheckRoute = createRoute({
+    path: '/check',
+    method: 'GET',
+    
+    handle: (_, res) => {
         res.statusCode = 200;
-        res.write('OK  - Health Check');
+        res.write('OK');
         return res;
     }
-}
-
-module.exports.HealthCheckRoute = HealthCheckRoute;
+});

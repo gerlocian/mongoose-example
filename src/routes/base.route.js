@@ -1,4 +1,4 @@
-const URLPattern = require('urlpattern-polyfill');
+const URLPattern = require('urlpattern-polyfill').URLPattern;
 
 class BaseRoute {
     #method = undefined;
